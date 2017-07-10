@@ -1,16 +1,12 @@
 <template>
   <div class="app">
-    <p class="j-box" v-on:click="box">1111111111</p>
-    <p class="j-box" v-on:click="box1">22222222222</p>
-    <router-link to="/">33333333333333</router-link>
-    <p>4444444444444444</p>
+    <Header></Header>
     <router-view></router-view>
-    <box></box>
   </div>
 </template>
 
 <script>
-  import Box from './components/Box.vue'
+  import Header from './components/header/Header.vue'
   export default {
     name: 'app',
     data () {
@@ -19,23 +15,15 @@
       }
     },
     methods: {
-      box: function () {
-        console.log('ppppp')
-        this.$router.push({ path: '/' })
-      },
-      box1: function () {
-        console.log('kkkkkkk')
-        this.$router.push({ path: '/box' })
-      }
     },
     components: {
-      Box
+      Header
     }
   }
 </script>
 
 <style>
-  @import "./common/style/public.less";
+  @import "common/style/public/public.less";
   html{
     height: 100%;
   }
@@ -45,6 +33,7 @@
   .app {
     width: 100%;
     height: 100%;
+    background-color: #f5f5f5;
   }
   p{
     width: 100px;

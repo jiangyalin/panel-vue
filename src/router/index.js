@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import layouts from '@/components/Layouts.vue'
-import Box from '@/components/Box.vue'
+import Header from '@/components/menu/Menu.vue'
 
 Vue.use(Router)
 
@@ -9,11 +8,11 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'layouts',
-      component: layouts
+      name: 'header',
+      component: Header
     },
     {
-      name: 'b2', path: '/box', component: Box
+      name: 'b2', path: '/box', component: Header
     }
   ]
 })
