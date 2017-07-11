@@ -35,9 +35,4 @@
     height: 100%;
     background-color: #f5f5f5;
   }
-  p{
-    width: 100px;
-    height: 100px;
-    border: 1px solid #3a33d1;
-  }
 </style>
